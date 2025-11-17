@@ -9,7 +9,6 @@ public class SafeInput
         public static String getNonZeroLenString(Scanner pipe, String prompt) {
             String RestString = " ";
             do {
-
                 System.out.print("\n" + prompt + ": ");
                 RestString = pipe.nextLine().trim();
                 if (RestString.isEmpty()) {

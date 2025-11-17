@@ -10,7 +10,6 @@ import java.io.FileNotFoundException;
 import javax.swing.*;
 import java.io.*;
 
-
 public class FileInspector
 {
     public static void main(String[] args)

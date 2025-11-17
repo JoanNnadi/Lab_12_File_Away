@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.io.IOException;
 import java.util.*;
 
 import static java.nio.file.StandardOpenOption.CREATE;
@@ -154,7 +155,6 @@ public class DataSaver {
         }
     }
 
-
     // -------------------------------------------------------
     // TABLE PRINTING METHOD
     // -------------------------------------------------------
@@ -170,7 +170,6 @@ public class DataSaver {
         for (String[] r : rows)
             for (int i = 0; i < cols; i++)
                 width[i] = Math.max(width[i], r[i].length());
-
         // Borders
         String border = buildBorder(width);
 
